@@ -1,4 +1,6 @@
-﻿Boolean a(int x){
+﻿
+//Задача 19
+Boolean a(int x){
     Boolean t = false;
     if(x/10000<1){
         Console.WriteLine("Число должно быть пятизначным");
@@ -22,3 +24,21 @@ Console.WriteLine(t);
 a(14212);
 a(12821);
 a(23432);
+
+// Задача 21
+
+// Задача 23
+Array d(int n){
+    int [] p = new int[n];
+    for(int i = 1;i<=n;i++){
+        int y = i;
+p[i-1] =(int) Math.Pow(y, 3);
+Console.Write(p[i-1]+" ");
+    }
+    Console.WriteLine();
+    return p ;
+    
+}
+
+d(3);
+d(5);
